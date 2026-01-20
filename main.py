@@ -62,9 +62,7 @@ def events(request: Request, user: str):
     db = get_db()
     rows = db.execute("SELECT * FROM events").fetchall()
 
-    waste = 0
-    for _ in range(1000000):
-        waste += 1
+
 
 
     return templates.TemplateResponse(
